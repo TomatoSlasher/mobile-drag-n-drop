@@ -1,7 +1,12 @@
 .App {
   text-align: center;
 }
-
+h1,
+h2,
+h3,
+h4 {
+  margin: 10px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -16,14 +21,19 @@
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
+}
+input {
+  all: unset;
+  width: 100%;
+  padding: 0.5rem 0.25rem;
 }
 
+.draggable-input::placeholder {
+  color: white;
+}
 .App-link {
   color: #61dafb;
 }
